@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b55a658376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="side-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I am <span>Avinash</span> Vadivelu</h1>
+            <p>Computer Science Student at UTD</p>
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/AboutMe-Pic.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello there! I'm Avinash Vadivelu, a passionate and driven Computer Science student at the 
+                University of Texas at Dallas (UTD). As a tech enthusiast, I find joy in navigating the 
+                ever-evolving landscape of computer science and technology. My academic journey at UTD has 
+                equipped me with a solid foundation in various programming languages, algorithms, and data 
+                structures. From delving into the intricacies of software development to exploring the world 
+                of ML/AI, I thrive on the challenges that the field of computer science presents. Beyond the 
+                classroom, I am an avid problem solver, always eager to take on new coding challenges. I 
+                believe in the power of collaboration and have actively engaged in group projects, where 
+                I've honed my skills in teamwork and communication. My experiences extend to personal 
+                projects that reflect my commitment to applying theoretical knowledge in real-world 
+                scenarios. As I progress through my academic journey at UTD, I am excited about the endless 
+                possibilities that the field of computer science offers. Whether it's developing innovative 
+                solutions or contributing to open-source projects, I am committed to making a positive impact through technology.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages:</span><br>Java, C++, Python, JavaScript (React, JSON), HTML, CSS</li>
+                        <li><span>Technologies/Operating Systems:</span><br> AWS, Oracle Cloud, SQL (MySQL, PostgreSQL), macOS, Windows 10, Linux/Unix</li>
+                        <li><span>Machine Learning:</span><br> Pandas, Scikit-learn, Matplotlib, Seaborn, Pytorch, NumPy, TensorFlow</li>
+                        <li><span>Software Tools:</span><br> Agile (Scrum), REST, Git, VS Code, IntelliJ, Unit testing (JUnit), MSOffice</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2016-2019</span><br>Instructor at Kumon</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Anticipated Dec 2024</span><br>Bachelor of Science in Computer Science</li>
+                        <li><span>Anticipated Dec 2025</span><br>Master of Science in Computer Science</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <img src="Images/AWS Badge.png">
+                        <img src="Images/OCI Badge.png">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/Project1.png">
+                <div class="layer">
+                    <h3>Stock Predictor</h3>
+                    <p>Developed a Recurrent Neural Network (RNN) from scratch with a team of 4 that is capable of 
+                    forecasting stock close prices based on historical data with an accuracy of 85%.</p>
+                    <a href="https://github.com/avi20025/Stock-Market-Predictor" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/Project2.png">
+                <div class="layer">
+                    <h3>Speech Converter</h3>
+                    <p>Designed a program that utilizes an API from AssemblyAI to provide a transcript of a sample audio file.</p>
+                    <a href="https://github.com/avi20025/Speech-Converter" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/Project3.png">
+                <div class="layer">
+                    <h3>Student Management Database</h3>
+                    <p>Formulated a program that utilizes the Java Database Connectivity API for organizing college students general data 
+                    (ID, credit hours, and fees) and to transfer collected data into a MySQL database.</p>
+                    <a href="https://github.com/avi20025/Student-Management-Database" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/avi20025" class="btn" target="_blank">See more</a>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> avi.chetty2002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8326858545</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/avinash-vadivelu-a06960216/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("side-menu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxS7z3rz-SDFLa2kSr9PrL6HF5sVM33Zaw1rXNqjBPPcc_zgQbOZwq5mpHab3fdG6oV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = " ";
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
